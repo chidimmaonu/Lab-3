@@ -1,16 +1,68 @@
 header {
     text-align: center;
-    background-color: red;
+    background-color: lightblue;
     color: white;
 }
+
 #customfooter {
     text-align: center;
-    background-color: blue;
-    color: white;
+    background-color: lightblue;
+    color: black;
 }
-#first{
+
+#first {
     color: green;
 }
-.second{
-    color:orangered
+
+.second {
+    color: orangered;
 }
+
+.element {
+    float: left;
+    margin-right: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.skill {
+    width: 360px;
+    background-color: aqua;
+}
+
+.project-item {
+    width: 360px;
+    background-color: orangered;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 16px;
+    color: white;
+}
+
+@media (max-width: 600px){
+    body {
+        font-size:80px;
+        background-color: limegreen;
+    
+    .project-item{
+        background-color: purple;
+    }
+}
+}
+/*@media (min-width: 650px){
+    body{
+        background-color: pink;
+    }
+}
+    */
+@media (min-width: 650px) and (max-width: 800px){
+        body{
+            background-color: pink;
+    }
+}
+    
+    
